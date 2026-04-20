@@ -1,27 +1,56 @@
-# Site settings
-title: "MESGRO - Robotics & Mechatronics Portfolio"
-description: "An open-source template for showcasing robotics and mechatronics projects with 3D models, schematics, and code"
-url: "https://aojedao.github.io"
-baseurl: "/MESGRO"
-author: "Your Name"
-email: "your.email@example.com"
-github_username: "your-github-username"
-linkedin_username: "your-linkedin"
-twitter_username: "your-twitter"
+# Site Settings
+title: "Dylan Bailes"
+name: "Dylan Bailes"
+description: "Mechanical Engineering Student at UC San Diego specializing in Controls, Robotics, and Autonomous Systems."
 
-# Build settings
-markdown: kramdown
-highlighter: rouge
+url: "https://dylanbailes.github.io"
+baseurl: ""
+
+# Personal Info
+author:
+  name: "Dylan Bailes"
+  avatar: "/assets/profile.jpg"   # optional (add later)
+  bio: "Mechanical Engineering student @ UCSD (GPA: 3.6) with experience in robotics, controls, and UAV systems."
+  location: "San Diego, CA"
+  email: "dbailes0001@gmail.com"
+
+# Links (IMPORTANT — shows on homepage)
+links:
+  - label: "Resume"
+    url: "/assets/resume.pdf"
+  - label: "GitHub"
+    url: "https://github.com/dylanbailes"
+  - label: "LinkedIn"
+    url: "https://linkedin.com/in/YOUR-LINKEDIN"  # replace
+
+# Navigation (keep minimal)
+nav:
+  - title: "Home"
+    url: "/"
+  - title: "Projects"
+    url: "/projects/"
+  - title: "Resume"
+    url: "/assets/resume.pdf"
+
+# Theme Settings (Minimal Mistakes style)
+remote_theme: "mmistakes/minimal-mistakes"
+
 plugins:
-  - jekyll-feed
-  - jekyll-sitemap
+  - jekyll-include-cache
   - jekyll-seo-tag
 
-# Collections
+# Appearance
+minimal_mistakes_skin: "default"   # options: default, dark, air, aqua
+
+# Markdown
+markdown: kramdown
+highlighter: rouge
+
+# Collections (for projects)
 collections:
   projects:
     output: true
-    permalink: /:collection/:name/
+    permalink: /projects/:path/
 
 # Defaults
 defaults:
@@ -29,61 +58,22 @@ defaults:
       path: ""
       type: "projects"
     values:
-      layout: "project"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
+      layout: "single"
+      author_profile: true
 
-# Exclude from processing
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - README.md
-  - LICENSE
+# Footer
+footer:
+  links:
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url: "mailto:dbailes0001@gmail.com"
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/dylanbailes"
 
-# Site navigation
-navigation:
-  - title: "Home"
-    url: "/"
-  - title: "Projects"
-    url: "/projects/"
-  - title: "About"
-    url: "/about/"
-
-# Project categories
-project_categories:
-  - name: "Robotics"
-    slug: "robotics"
-    description: "Autonomous robots and robotic systems"
-  - name: "Mechatronics"
-    slug: "mechatronics"
-    description: "Integration of mechanical, electrical, and software systems"
-  - name: "Arduino"
-    slug: "arduino"
-    description: "Arduino-based projects and prototypes"
-  - name: "3D Printing"
-    slug: "3d-printing"
-    description: "Custom 3D printed components and designs"
-  - name: "IoT"
-    slug: "iot"
-    description: "Internet of Things devices and applications"
-
-# 3D Model settings
-models:
-  supported_formats: ["stl", "obj", "gltf", "glb"]
-  default_background: "#f0f0f0"
-  camera_controls: true
-  auto_rotate: false
-
-# Schema settings
-schematics:
-  supported_formats: ["png", "jpg", "jpeg", "svg", "pdf"]
-  zoom_enabled: true
-  pan_enabled: true
+# SEO (important for professionalism)
+social:
+  type: Person
+  name: Dylan Bailes
+  links:
+    - https://github.com/dylanbailes
