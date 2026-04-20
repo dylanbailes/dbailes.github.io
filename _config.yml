@@ -1,7 +1,7 @@
 # Site Settings
 title: "Dylan Bailes"
 name: "Dylan Bailes"
-description: "Mechanical Engineering Student at UC San Diego specializing in Controls, Robotics, and Autonomous Systems."
+description: "Mechanical Engineering Student at UC San Diego specializing in Controls and Robotics."
 
 url: "https://dylanbailes.github.io"
 baseurl: ""
@@ -21,7 +21,7 @@ links:
   - label: "GitHub"
     url: "https://github.com/dylanbailes"
   - label: "LinkedIn"
-    url: "https://linkedin.com/in/YOUR-LINKEDIN"  # replace
+    url: "https://linkedin.com/in/dylan-bailes"  # replace
 
 # Navigation (keep minimal)
 nav:
